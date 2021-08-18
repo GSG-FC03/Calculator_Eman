@@ -56,21 +56,18 @@ function operator(oprat) {
     const num2 = numbers.pop();
     if (calculator.keepOperator == "+") {
       res = num1 + num2;
-      console.log(res); // To check result
     } else if (calculator.keepOperator == "x") {
       res = num1 * num2;
-      console.log(res);
     } else if (calculator.keepOperator == "/") {
       if (num1 == 0) res = "NAN";
       else res = num2 / num1;
-      console.log(res);
     } else if (calculator.keepOperator == "-") {
       res = num2 - num1;
       console.log(res);
     } else if (oprat == "=") {
       result.value = res;
-      console.log(res);
     }
+    result.value = res;
   }
 }
 
