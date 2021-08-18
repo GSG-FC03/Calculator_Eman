@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Start Conatiner -->
+    <main class="conatiner">
+      <!-- Start Calcualtor -->
+      <section class="calculator">
+        <h1>Calcualtor</h1>
+        <input
+          type="text"
+          name="result"
+          class="result"
+          id="result"
+          value=""
+          placeholder="Result"
+          readonly
+        />
+        <input type="button" value="C" onclick="clearScreen()" id="clear" />
+
+        <input type="button" value="1" />
+        <input type="button" value="2" />
+        <input type="button" value="3" />
+        <input type="button" value="+" />
+
+        <input type="button" value="4" />
+        <input type="button" value="5" />
+        <input type="button" value="6" />
+        <input type="button" value="-" />
+
+        <input type="button" value="7" />
+        <input type="button" value="8" />
+        <input type="button" value="9" />
+        <input type="button" value="x" />
+
+        <input type="button" value="." />
+        <input type="button" value="0" />
+        <input type="button" value="=" />
+        <input type="button" value="/" />
+      </section>
+      <!-- End Calcualtor -->
+
+      <!-- Start converter -->
+      <section class="converter"></section>
+      <!-- End converter -->
+    </main>
+    <!-- End Conatiner -->
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
