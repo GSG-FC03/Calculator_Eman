@@ -12,7 +12,7 @@
     <main class="conatiner">
       <!-- Start Calcualtor -->
       <section class="calculator">
-        <h1>Calcualtor</h1>
+        <h1>Calcualtor</h1>        
         <input
           type="text"
           name="result"
@@ -47,7 +47,16 @@
       <!-- End Calcualtor -->
 
       <!-- Start converter -->
-      <section class="converter"></section>
+      <section class="converter">
+        <h1>Converter</h1>
+        <select name="conver" id="conver" onchange="getSelectedValue()">
+          <option value=""></option>
+          <option value="USD">₪ To $</option>
+          <option value="Shekels">$ To ₪ </option>
+          <option value="Euro">₪ To €</option>
+          <option value="shekelesEuro">€ To ₪ </option>
+        </select>
+      </section>
       <!-- End converter -->
     </main>
     <!-- End Conatiner -->
