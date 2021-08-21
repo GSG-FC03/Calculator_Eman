@@ -1,8 +1,8 @@
 # Calculator_Eman
 # ✧Description
-### simple calculator &amp; currency converter built using HTML5, CSS3 and JavaScript, Made as a project while learning javascript.
+#### simple calculator &amp; currency converter built using HTML5, CSS3 and JavaScript, Made as a project while learning javascript.
 
-# User Stories
+# ✧User Stories
 - I can add, subtract, multiply and divide two numbers.
 - I can clear the input filed with a clear button.
 - I can convert the number has typed into the calculator into different currencies.
