@@ -100,4 +100,5 @@ function getSelectedValue(){
     console.log(conver.value);
     result.value=(parseFloat(result.value)/3.79).toFixed(3)+'₪'
   }
+  conver.value=''
 }
