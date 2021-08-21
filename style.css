@@ -64,3 +64,16 @@ button {
   font-weight: 200;
 }
 
+/*Start converter*/
+.converter{
+  display: flex;
+  margin:50px 0px;
+}
+.converter h1{
+  margin-right: 10px;
+}
+#conver{
+  width: 180px;
+  outline: none;
+  border-radius: 20px;
+}
