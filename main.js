@@ -92,20 +92,16 @@ const conver = document.querySelector("#conver");
 function getSelectedValue() {
   if (conver.value == "USD") {
     // shekeles to USD
-    console.log(conver.value);
     result.value = (parseFloat(result.value) / 3.25).toFixed(3) + "$";
   } else if (conver.value == "Shekels") {
     // USD to shekeles
-    console.log(conver.value);
     result.value = (parseFloat(result.value) * 3.25).toFixed(3) + "₪";
   } else if (conver.value == "Euro") {
     //shekeles to EURO
-    console.log(conver.value);
-    result.value = (parseFloat(result.value) * 3.79).toFixed(3) + " €";
+    result.value = (parseFloat(result.value) * 3.67).toFixed(3) + " €";
   } else if (conver.value == "shekelesEuro") {
     // EURO to shekeles
-    console.log(conver.value);
-    result.value = (parseFloat(result.value) / 3.79).toFixed(3) + "₪";
+    result.value = (parseFloat(result.value) / 3.67).toFixed(3) + "₪";
   }
   conver.value = "";
 }
