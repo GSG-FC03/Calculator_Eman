@@ -6,8 +6,8 @@ const calculator = {
   keepOperator: "",
   check: false,
   checkOperand: false,
-  storeNum:'',
-  firstOperand:''
+  storeNum: "",
+  firstOperand: "",
 };
 
 // Add listener on section calculator
@@ -34,12 +34,12 @@ function clearScreen() {
   calculator.check = false;
   calculator.checkOperand = false;
   calculator.storeNum = "";
-  calculator.firstOperand='';
+  calculator.firstOperand = "";
 }
-// To store Numbers that users enter 
+// To store Numbers that users enter
 function digit(num) {
   if (calculator.checkOperand == true) {
-    calculator.storeNum=num;
+    calculator.storeNum = num;
     calculator.checkOperand = false;
   } else {
     // check if user enterd two digit Ex. 22,222,.... and store it on array
@@ -52,15 +52,15 @@ function digit(num) {
 function operator(operat) {
   let res;
   if (calculator.check == false) {
-    calculator.firstOperand=calculator.storeNum
+    calculator.firstOperand = calculator.storeNum;
     calculator.keepOperator = operat;
     calculator.check = true; // To keep last operator
     calculator.checkOperand = true; // set checkOperand true to enter new value after operator
   }
 
   if (operat == "=") {
-    const num1 = parseFloat(calculator.firstOperand)
-    const num2 = parseFloat(calculator.storeNum)
+    const num1 = parseFloat(calculator.firstOperand);
+    const num2 = parseFloat(calculator.storeNum);
     if (calculator.keepOperator == "+") {
       res = num1 + num2;
     } else if (calculator.keepOperator == "x") {
@@ -72,6 +72,10 @@ function operator(operat) {
       res = num1 - num2;
     }
     result.value = res;
+    calculator.check = false;
+    // store result if user want to  add, subtract, multiply or divide on display result
+    calculator.storeNum = res + "";
+    calculator.firstOperand = res + "";
   } else {
     result.value += calculator.keepOperator;
   }
@@ -84,21 +88,20 @@ function updateDisplay(display) {
 
 //**********Start Conveter*********
 
-const conver=document.querySelector('#conver');
-function getSelectedValue(){
-
-  if(conver.value == "USD"){// shekeles to USD
-    console.log(conver.value);
-    result.value=(parseFloat(result.value)/3.25).toFixed(3)+'$'
-  }else if(conver.value == "Shekels"){ // USD to shekeles
-    console.log(conver.value);
-    result.value=(parseFloat(result.value)*3.25).toFixed(3)+'₪'
-  }else if(conver.value == "Euro"){ //shekeles to EURO
-    console.log(conver.value);
-    result.value=(parseFloat(result.value)*3.79).toFixed(3)+' €'
-  }else if(conver.value == "shekelesEuro"){ // EURO to shekeles
-    console.log(conver.value);
-    result.value=(parseFloat(result.value)/3.79).toFixed(3)+'₪'
+const conver = document.querySelector("#conver");
+function getSelectedValue() {
+  if (conver.value == "USD") {
+    // shekeles to USD
+    result.value = (parseFloat(result.value) / 3.25).toFixed(3) + "$";
+  } else if (conver.value == "Shekels") {
+    // USD to shekeles
+    result.value = (parseFloat(result.value) * 3.25).toFixed(3) + "₪";
+  } else if (conver.value == "Euro") {
+    //shekeles to EURO
+    result.value = (parseFloat(result.value) * 3.67).toFixed(3) + " €";
+  } else if (conver.value == "shekelesEuro") {
+    // EURO to shekeles
+    result.value = (parseFloat(result.value) / 3.67).toFixed(3) + "₪";
   }
-  conver.value=''
+  conver.value = "";
 }

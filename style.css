@@ -6,7 +6,11 @@
   font-weight: bold;
 }
 body{
-    background-image: linear-gradient(to right, #100f10 , #cb7ed6);
+    background-image:url('https://img.freepik.com/free-photo/colourful-math-numbers-white-background_23-2148416141.jpg?size=626&ext=jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .conatiner {
   width: 100%;
@@ -18,52 +22,39 @@ body{
 h1 {
   text-align: center;
   margin-bottom: 1.5%;
-  color: #fff;
+  color:#000
 }
 .calculator {
   width: 300px;
 }
 input {
   padding: 25px;
-  color: rgb(87, 87, 87);
+  color: #fff;
   font-size: 1em;
   cursor: pointer;
   width: 70px;
-  background-color: #fff;
+  background-color:#795b70;
   border: none;
   outline: none;
   border-radius: 4px;
 }
 
 input[type="button"] {
-  color: rgb(122, 122, 122);
   margin-bottom: 3px;
 }
 input[type="text"] {
-  background-color: rgb(255, 255, 255);
+  background-color:#ddd;
+  color: black;
   width: 218px;
 }
 input[type="button"]:hover {
-  background-color: rgb(37, 35, 59);
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 #clear {
   color: #fff;
-  background-color: #72a09e;
+  background-color:#795b70;
 }
-button {
-  border: none;
-  background-color: rgb(41, 38, 38);
-  padding: 8px;
-  color: white;
-  margin: 2px;
-  cursor: pointer;
-  outline: none;
-  border-radius: 4px;
-  font-size: 0.8em;
-  font-weight: 200;
-}
-
 /*Start converter*/
 .converter{
   display: flex;
@@ -76,4 +67,7 @@ button {
   width: 180px;
   outline: none;
   border-radius: 20px;
+}
+select{
+  padding-left:10px;
 }
