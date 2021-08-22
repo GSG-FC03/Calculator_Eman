@@ -6,7 +6,11 @@
   font-weight: bold;
 }
 body{
-    background-image:url('https://previews.123rf.com/images/iunewind/iunewind1403/iunewind140300080/26576794-vector-number-background.jpg');
+    background-image:url('https://img.freepik.com/free-photo/colourful-math-numbers-white-background_23-2148416141.jpg?size=626&ext=jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .conatiner {
   width: 100%;
