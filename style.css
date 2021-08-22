@@ -44,8 +44,8 @@ input[type="text"] {
   width: 218px;
 }
 input[type="button"]:hover {
-  background-color: rgb(37, 35, 59);
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 #clear {
   color: #fff;
